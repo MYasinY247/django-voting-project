@@ -35,6 +35,7 @@
 
     <div class="formContainer">
         <h3><b>How was your first session?</b></h3>
+        <!-- When clicking on an image, the emotion and session number is recorded and printed to the terminal -->
         <form method="post" action="{%url 'feedback' %}">
             {% csrf_token %}
             <!--Protects the form from cross site request forgery attacks, found from django 4 for the impatient-->
@@ -63,7 +64,6 @@
             </div>
         </div>
     </div>
-    <!--CHecking for a change-->
 
 
 </body>
