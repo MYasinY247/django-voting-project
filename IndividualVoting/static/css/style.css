@@ -1,0 +1,42 @@
+.formContainer {
+    border-radius: 20px;
+    border: 2px solid red;
+    border-radius: 5px;
+    height: 25%;
+    width: 66.6%;
+    text-align: center;
+    margin: auto;
+
+}
+
+.sessionList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6%;
+    text-align: center;
+    padding-left: 25%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.hovering:hover {
+    transform: scale(1.05);
+    transition: 0.3 ease-in;
+    cursor: pointer;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.returnButton {
+
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
