@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+#Authorship Muhammad Yasin Yahya W1974891
 from django.contrib import admin
 from django.urls import path
 from IndividualVoting import views as votingViews
