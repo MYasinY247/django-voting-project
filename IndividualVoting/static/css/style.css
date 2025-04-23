@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: "aptos";
+    font-family: "aptos", sans-serif;
 }
 
 .sessionList {
@@ -34,6 +34,7 @@ h1 {
 }
 
 .hovering:hover {
+    max-width: 100%;
     transform: scale(1.05);
     transition: 0.3 ease-in;
     cursor: pointer;
