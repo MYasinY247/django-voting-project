@@ -10,17 +10,26 @@
 
 }
 
+body {
+    font-family: "aptos";
+}
+
 .sessionList {
+
     display: flex;
     flex-wrap: wrap;
     gap: 6%;
     text-align: center;
     padding-left: 25%;
+    padding-top: 1%;
 }
 
 h1 {
     text-align: center;
     padding-bottom: 5%;
+    background-color: black;
+    height: 110px;
+    color: #fff;
 }
 
 .hovering:hover {
@@ -40,4 +49,43 @@ h1 {
     position: fixed;
     bottom: 10px;
     left: 10px;
+}
+
+footer {
+
+    height: 80px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+footer h3 {
+    margin: 0 25px;
+}
+
+footer p {
+    cursor: pointer;
+}
+
+footer p:hover {
+    color: #ddd;
+}
+
+.space {
+    padding-bottom: 18%;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
 }
