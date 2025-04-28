@@ -2,6 +2,7 @@ from django.shortcuts import render
 #Authorship Muhammad Yasin Yahya W1974891
 # Create your views here.
 from django.http import HttpResponse
+from .models import*
 
 
 #functions used to create the webpages
@@ -29,4 +30,9 @@ def feedbackViews(request):
         emotion = request.POST.get('emotion')
         team = request.POST.get('team')
         print (emotion+" " +session+" "+team)
+
+        # creating a new entry to store in db
+        feedbackValues=Feedback(session=session, emotion=emotion, team=team)
+        feedbackValues.save()
+
         return render(request,'FeedbackResponse.html')
