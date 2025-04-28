@@ -27,6 +27,6 @@ def feedbackViews(request):
     if request.method=="POST":
         session = request.POST.get('session')
         emotion = request.POST.get('emotion')
-        group = request.POST.get('group')
-        print (emotion+" " +session+" "+group)
+        team = request.POST.get('team')
+        print (emotion+" " +session+" "+team)
         return render(request,'FeedbackResponse.html')
