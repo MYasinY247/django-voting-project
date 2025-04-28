@@ -9,4 +9,4 @@ class Feedback(models.Model):
 
 
     def __str__(self):
-        return str(self.session) + " "+ self.emotion + " " +str(self.team)
+        return "Session: " +str(self.session) + "| Vote: "+ self.emotion + "| Team: " +str(self.team)
